@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct sea_turtlesApp: App {
+    // Create the instances of our agents here at the top level
+    let mainVisionAgent = VisionAgent()
+    let mainMatchingAgent = MatchingAgent()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(visionAgent: VisionAgent(), matchingAgent: MatchingAgent())
         }
     }
 }

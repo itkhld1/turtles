@@ -10,7 +10,6 @@ import UIKit
 
 // we use actor, not struct or class
 // it confirms to our VisionAgentProtocol
-
 actor VisionAgent: VisionAgentProtocol {
     
     func extractFeatures(from image: UIImage) async throws -> [Int] {
