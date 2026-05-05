@@ -13,5 +13,8 @@ struct TurtleProfile: Identifiable, Codable {
     var id: UUID = UUID()
     var name: String
     var species: String
+    var location: String
+    var scutePattern: String
     var description: String?
+    var imageName: String?
 }

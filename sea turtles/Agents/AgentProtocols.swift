@@ -10,14 +10,14 @@ import UIKit // i import uikit because i will use uiimage to enter an image from
 
 // MARK: - vision agent interface
 protocol VisionAgentProtocol {
-    /// takes a photo of a turrle from the photos and return an array of intergers representing the scale counts
-    func extractFeatures(from image: UIImage) async throws -> [Int]
+    /// takes a photo of a turtle from the photos and return a string representing the scute pattern
+    func extractFeatures(from image: UIImage) async throws -> String
 }
 
 // MARK: - matching agent interface
 protocol MatchingAgentProtocol {
-    /// takes the extracted scale counts and search in database for a matching turtles
-    func findMatch(for features: [Int]) async throws -> TurtleProfile?
+    /// takes the extracted scute pattern and search in database for a matching turtles
+    func findMatch(for pattern: String) async throws -> TurtleProfile?
 }
 
 

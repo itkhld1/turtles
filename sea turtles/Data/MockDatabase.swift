@@ -2,24 +2,90 @@
 //  MockDatabase.swift
 //  sea turtles
 //
-//  Created by itkhld on 4.05.2026.
-//
 
 import Foundation
 
 struct MockDatabase {
-    // i am using the scale count as "key" to find the turtle
-    // [3, 4] means 3 scales on left and 4 scales on right
-    static let knownTurtles: [[Int]: TurtleProfile] = [
-        [1,10]: TurtleProfile(name: "Turtle 1", species: "Species 1", description: "description 1"),
-        [2,9]: TurtleProfile(name: "Turtle 2", species: "Species 2", description: "description 2"),
-        [3,4]: TurtleProfile(name: "Turtle 3", species: "Species 3", description: "description 3"),
-        [4,7]: TurtleProfile(name: "Turtle 4", species: "Species 4", description: "description 4"),
-        [5,6]: TurtleProfile(name: "Turtle 5", species: "Species 5", description: "description 5"),
-        [6,5]: TurtleProfile(name: "Turtle 6", species: "Species 6", description: "description 6"),
-        [7,4]: TurtleProfile(name: "Turtle 7", species: "Species 7", description: "description 7"),
-        [8,3]: TurtleProfile(name: "Turtle 8", species: "Species 8", description: "description 8"),
-        [9,2]: TurtleProfile(name: "Turtle 9", species: "Species 9", description: "description 9"),
-        [10,1]: TurtleProfile(name: "Turtle 10", species: "Species 10", description: "description 10")
+    static let knownTurtles: [String: TurtleProfile] = [
+        "114-126-134": TurtleProfile(
+            name: "gpcm3",
+            species: "Chelonia mydas",
+            location: "Guadeloupe (Malendure)",
+            scutePattern: "114-126-134",
+            description: "First match in Guadeloupe, observed multiple times between 2013 and 2015.",
+            imageName: "turtle_gpcm3"
+        ),
+        "315-325-334": TurtleProfile(
+            name: "Tomy",
+            species: "Eretmochelys imbricata",
+            location: "Martinique (Les Anses d'Arlet)",
+            scutePattern: "315-325-334",
+            description: "A young hawksbill often seen near the seagrass beds.",
+            imageName: "turtle_tomy"
+        ),
+        "216-225-236": TurtleProfile(
+            name: "Petite-Terre 01",
+            species: "Chelonia mydas",
+            location: "Guadeloupe (Petite-Terre)",
+            scutePattern: "216-225-236",
+            description: "A large green turtle monitored in the natural reserve.",
+            imageName: "turtle_pt01"
+        ),
+        "414-345-334": TurtleProfile(
+            name: "Cara",
+            species: "Caretta caretta",
+            location: "Caribbean Sea",
+            scutePattern: "414-345-334",
+            description: "A loggerhead turtle with a distinct brown-red shell.",
+            imageName: "turtle_cara"
+        ),
+        "126-135-146": TurtleProfile(
+            name: "Maly",
+            species: "Chelonia mydas",
+            location: "Guadeloupe (Baie de Malendure)",
+            scutePattern: "126-135-146",
+            description: "Frequently spotted feeding on seagrass at shallow depths.",
+            imageName: "turtle_maly"
+        ),
+        "215-225-237": TurtleProfile(
+            name: "Hawky",
+            species: "Eretmochelys imbricata",
+            location: "Martinique (Diamond Rock)",
+            scutePattern: "215-225-237",
+            description: "Recognizable by the sharp curve of its beak.",
+            imageName: "turtle_hawky"
+        ),
+        "114-126-135": TurtleProfile(
+            name: "Greenie",
+            species: "Chelonia mydas",
+            location: "Guadeloupe (Petit-Canal)",
+            scutePattern: "114-126-135",
+            description: "A medium-sized green turtle often found near mangroves.",
+            imageName: "turtle_greenie"
+        ),
+        "325-335-346": TurtleProfile(
+            name: "Shellby",
+            species: "Eretmochelys imbricata",
+            location: "Martinique (Sainte-Anne)",
+            scutePattern: "325-335-346",
+            description: "A beautifully colored hawksbill with very symmetrical scutes.",
+            imageName: "turtle_shellby"
+        ),
+        "145-215-225": TurtleProfile(
+            name: "Flipper",
+            species: "Chelonia mydas",
+            location: "Guadeloupe (Goyave)",
+            scutePattern: "145-215-225",
+            description: "Named for its unusually long front flippers.",
+            imageName: "turtle_flipper"
+        ),
+        "4-post-ocular": TurtleProfile(
+            name: "Loggie",
+            species: "Caretta caretta",
+            location: "Caribbean Sea",
+            scutePattern: "4-post-ocular",
+            description: "A large loggerhead turtle often seen in deep open waters.",
+            imageName: "turtle_loggie"
+        )
     ]
 }
